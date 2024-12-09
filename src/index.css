@@ -68,8 +68,17 @@ padding: 24px;
 .attribution a { 
 color: hsl(228, 45%, 60%); 
 }
+.header{
+  color: var(--primary);
+}
 p{
   font-size: 16px;
+}
+.phar{
+  color: var(--text);
+}
+a{
+  text-decoration: none;
 }
 .link{
   text-decoration: none;
@@ -77,6 +86,9 @@ p{
   padding: 12px 24px;
   font-size: 16px;
   font-weight: 500;
+}
+.details-link{
+  color: var(--primary);
 }
 .active-link{
   color: var(--primary);
@@ -105,15 +117,17 @@ p{
 }
 .product-list{
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 24px;
 }
 .product-card{
   display: flex;
+  flex-direction: column;
   background: #fff;
   gap: 18px;
   padding: 18px;
   border-radius: 12px;
+  justify-content: space-between;
 }
 .product-img{
   height: 300px;
